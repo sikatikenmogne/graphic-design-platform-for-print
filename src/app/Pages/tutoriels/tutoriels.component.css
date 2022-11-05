@@ -1,0 +1,38 @@
+/*@import 'https://bootswatch.com/5/journal/bootstrap.css';*/
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.col{
+  flex-basis: 50%;
+}
+.col1{
+  padding-left: 125px;
+  margin-bottom: 200px;
+}
+
+.card{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+
+
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}

@@ -1,0 +1,63 @@
+.m
+{
+  margin-left: 3px;
+}
+.e{
+  color: white;
+}
+
+.clickable{
+  cursor : pointer;
+}
+.b{
+  margin-left: 5px;
+}
+.i{
+  height: 35px;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 17.5px;
+}
+.page{
+  margin-left: 5px;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  padding-left: 8px;
+  padding-bottom: 25px;
+  color: white;
+  background-color: #f00020;
+}
+
+.bouton1
+{
+  margin-left: 500px;
+  background: #f00020;
+  color: white;
+  border: 2px solid #f00020;
+}
+.bouton2
+{
+  margin-left: 10px;
+  background: #f00020;
+  color: white;
+  border: 2px solid #f00020;
+}
+.bouton
+{
+  margin-left: 10px;
+}
+
+.bouton3
+{
+  background: #f00020;
+  color: white;
+  border: 2px solid #f00020;
+}
+
+.bouton4
+{
+  color: #f00020;
+  border: 2px solid #f00020;
+  font-weight: bold;
+}

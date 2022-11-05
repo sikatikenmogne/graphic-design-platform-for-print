@@ -1,0 +1,248 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+<div class="container">
+  <main>
+    <h1>Tutoriels</h1>
+
+    <!--    <div class="date">-->
+    <!--      <input type="date">-->
+    <!--    </div>-->
+
+    <div class="insights">
+      <div class="sales">
+        <span class="material-icons-sharp">analytics</span>
+        <div class="middle">
+          <div class="left" *ngIf="users">
+            <h3>Total Utilisateurs</h3>
+            <h1>{{users.page.totalElements}}</h1>
+            <p>Utilisateurs</p>
+          </div>
+          <!--          <div class="progress">-->
+          <!--            <svg>-->
+          <!--              <circle cx='38' cy='38' r='36'></circle>-->
+          <!--            </svg>-->
+          <!--            <div class="number">-->
+          <!--              <p>81%</p>-->
+          <!--            </div>-->
+          <!--          </div>-->
+        </div>
+        <!--        <small class="text-muted">Dernières 24h</small>-->
+      </div>
+
+
+      <div class="expenses">
+        <span class="material-icons-sharp">bar_chart</span>
+        <div class="middle">
+          <div class="left" *ngIf="contributeurs">
+            <h3>Total Contributeurs</h3>
+            <h1 style="font-size: 30px;">{{contributeurs.page.totalElements}}</h1>
+            <p>Contributeurs</p>
+          </div>
+          <!--          <div class="progress">-->
+          <!--            <svg>-->
+          <!--              <circle cx='38' cy='38' r='36'></circle>-->
+          <!--            </svg>-->
+          <!--            <div class="number">-->
+          <!--              <p>81%</p>-->
+          <!--            </div>-->
+          <!--          </div>-->
+        </div>
+        <!--        <small class="text-muted">Dernières 24h</small>-->
+      </div>
+
+
+      <div class="income">
+        <span class="material-icons-sharp">stacked_line_chart</span>
+        <div class="middle">
+          <div class="left" *ngIf="meme">
+            <h3>Total Modèles</h3>
+            <h1>{{meme.page.totalElements}}</h1>
+            <p>Modèles</p>
+          </div>
+          <!--          <div class="progress">-->
+          <!--            <svg>-->
+          <!--              <circle cx='38' cy='38' r='36'></circle>-->
+          <!--            </svg>-->
+          <!--            <div class="number">-->
+          <!--              <p>44%</p>-->
+          <!--            </div>-->
+          <!--          </div>-->
+        </div>
+        <!--        <small class="text-muted">Dernières 24h</small>-->
+      </div>
+    </div>
+
+    <div class="recent-orders">
+      <h2>Commandes Récentes</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>Modèle</th>
+          <th>Numéro</th>
+          <th>Paiement</th>
+          <th>Statut</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Carte de visite</td>
+          <td>258</td>
+          <td>Valide</td>
+          <td class="warning">En cours</td>
+          <td class="primary">Détails</td>
+        </tr>
+        <tr>
+          <td>Carte de visite</td>
+          <td>258</td>
+          <td>Valide</td>
+          <td class="warning">En cours</td>
+          <td class="primary">Détails</td>
+        </tr>
+        <tr>
+          <td>Carte de visite</td>
+          <td>258</td>
+          <td>Valide</td>
+          <td class="warning">En cours</td>
+          <td class="primary">Détails</td>
+        </tr>
+        <tr>
+          <td>Carte de visite</td>
+          <td>258</td>
+          <td>Valide</td>
+          <td class="warning">En cours</td>
+          <td class="primary">Détails</td>
+        </tr>
+        <tr>
+          <td>Carte de visite</td>
+          <td>258</td>
+          <td>Valide</td>
+          <td class="warning">En cours</td>
+          <td class="primary">Détails</td>
+        </tr>
+        <tr>
+          <td>Carte de visite</td>
+          <td>258</td>
+          <td>Valide</td>
+          <td class="warning">En cours</td>
+          <td class="primary">Détails</td>
+        </tr>
+        </tbody>
+      </table>
+      <a href="#">Tout voir</a>
+    </div>
+
+    <!--    <app-routlet></app-routlet>-->
+  </main>
+  <div class="right">
+    <!--    <div class="top">-->
+    <!--      <button id="menu-btn">-->
+    <!--        <span class="material-icons-sharp">menu</span>-->
+    <!--      </button>-->
+    <!--      <a href="home" class="home">ACCUEIL</a>-->
+    <!--      <div class="theme-toggler">-->
+    <!--        <span class="material-icons-sharp active">light_mode</span>-->
+    <!--        <span class="material-icons-sharp">dark_mode</span>-->
+    <!--      </div>-->
+    <!--      <div class="profile">-->
+    <!--        <div class="info">-->
+    <!--          <p>Salut, <b>Franklin</b></p>-->
+    <!--          <small class="text-muted">Admin</small>-->
+    <!--        </div>-->
+    <!--        &lt;!&ndash;        <div class="profile-photo">&ndash;&gt;-->
+    <!--        &lt;!&ndash;          <img src="../Images/Logo g+14.png">&ndash;&gt;-->
+    <!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+    <!--      </div>-->
+    <!--    </div>-->
+
+    <div class="recent-updates">
+      <h2>Messages</h2>
+      <div class="updates">
+        <div class="update">
+          <div class="profile-photo">
+            <img src="">
+          </div>
+          <div class="message">
+            <p><b>Sikati Samuel</b> a reçu sa commande de Carte de visite</p>
+            <small class="text-muted">Il y a de celà 2 minutes</small>
+          </div>
+        </div>
+        <div class="update">
+          <div class="profile-photo">
+            <img src="">
+          </div>
+          <div class="message">
+            <p><b>Sikati Samuel</b> a reçu sa commande de Carte de visite</p>
+            <small class="text-muted">Il y a de celà 2 minutes</small>
+          </div>
+        </div>
+        <div class="update">
+          <div class="profile-photo">
+            <img src="">
+          </div>
+          <div class="message">
+            <p><b>Sikati Samuel</b> a reçu sa commande de Carte de visite</p>
+            <small class="text-muted">Il y a de celà 2 minutes</small>
+          </div>
+        </div>
+        <div class="update">
+          <div class="profile-photo">
+            <img src="">
+          </div>
+          <div class="message">
+            <p><b>Sikati Samuel</b> a reçu sa commande de Carte de visite</p>
+            <small class="text-muted">Il y a de celà 2 minutes</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="sales-analytics">
+        <h2>Analyse des Ventes</h2>
+        <div class="item online">
+          <div class="icon">
+            <span class="material-icons-sharp">shopping_cart</span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>COMMANDES PAYANTES</h3>
+              <!--              <small class="text-muted">Dernières 24h</small>-->
+            </div>
+            <!--            <h5 class="success">+39%</h5>-->
+            <h3>39</h3>
+          </div>
+        </div>
+        <div class="item offline">
+          <div class="icon">
+            <span class="material-icons-sharp">local_mall</span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>COMMANDES GRATUITES</h3>
+              <!--              <small class="text-muted">Dernières 24h</small>-->
+            </div>
+            <!--            <h5 class="danger">-17%</h5>-->
+            <h3>82</h3>
+          </div>
+        </div>
+        <div class="item customers">
+          <div class="icon">
+            <span class="material-icons-sharp">receipt_long</span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>NOUVEAUX MODÈLES</h3>
+              <!--              <small class="text-muted">Dernières 24h</small>-->
+            </div>
+            <!--            <h5 class="success">+25%</h5>-->
+            <h3>9</h3>
+          </div>
+        </div>
+        <div class="item add-product">
+          <div>
+            <span class="material-icons-sharp">add</span>
+            <h3><a routerLink="side/meme"> Ajouter un modèle </a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

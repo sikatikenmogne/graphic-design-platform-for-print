@@ -1,0 +1,65 @@
+<h1 style="color: #ea4336">Lister</h1>
+
+
+<div class="navbar navbar-expand-sm bg-light navbar-light">
+  <div class="navbar navbar-nav">
+    <button routerLink="/side/register" type="button"
+            class="btn btn-outline-info bouton1"> Nouvel Utilisateur </button>
+
+    <div class="navbar navbar-nav ml-auto bouton">
+      <form #f="ngForm" (ngSubmit)="onChercher(f.value)" >
+        <div class="form-group">
+          <input class="i" type="text" name="keyword" ngModel placeholder="Rechercher Nom">
+          <button type="submit" class="btn btn-primary bouton2">
+            <span class="fa fa-search">Rechercher</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div>
+  <table class="table mt-3" *ngIf="users">
+    <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Téléphone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Ville</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+<!--      <th scope="col"></th>-->
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let i of users._embedded.users">
+      <td>{{i.username}}</td>
+      <td>{{i.telephone}}</td>
+      <td>{{i.email}}</td>
+      <td>{{i.ville}}</td>
+      <td>
+        <a class="btn btn-sm bouton4" (click)="open(i)">Details</a>
+      </td>
+      <td>
+        <a class="btn btn-sm bouton3" (click)="onDeleteUser(i)">Supprimer</a>
+      </td>
+      <td>
+        <a class="btn btn-sm bouton3" (click)="onEditUser(i)">Modifier</a>
+      </td>
+<!--      <td>-->
+<!--        <a class="btn btn-sm bouton4" (click)="onRoleUser(i)">Ajouter Rôle</a>-->
+<!--      </td>-->
+    </tr>
+    </tbody>
+  </table>
+  <ul *ngIf="pages" class="nav">
+    <li class="clickable page" [ngClass]="p==currentPage?'active':''" *ngFor="let i of pages; let p=index">
+      <a (click)="onPageUser(p)">{{p}}</a>
+    </li>
+  </ul>
+</div>
+
+
+

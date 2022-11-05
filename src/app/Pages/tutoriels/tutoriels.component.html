@@ -1,0 +1,58 @@
+<div>
+  <div>
+    <div class="panel-heading">
+      <h4>Tutoriels</h4>
+    </div>
+    <br>
+    <div class="panel-body">
+      <strong>Sélectionnez les fichiers à partir de votre oridnateur</strong>
+      <div *ngIf="fileStatus.status === 'progress'">
+        <div class="progress">
+          <div [style.width.%]="fileStatus.percent" class="progress-bar progress-bar-animated bg-info"
+               role="progressbar" aria-valuenow="!">
+            {{fileStatus.requestType}} {{fileStatus.percent}}
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <form enctype="multipart/form-data">
+        <fieldset>
+          <div class="form-group">
+            <!--            <button mat-raised-button color="warn" (click)="openDialog()">Ajouter Formation</button>-->
+            <div>
+              <input type="file" name="contenu" (change)="onUploadFiles($any($event.target).files)" multiple ngModel
+                     class="form-control "/>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <br>
+
+      <div *ngIf="filenames.length > 0" class="js-upload-finished">
+        <h3>Processed files</h3>
+
+        <div *ngFor="let filename of filenames" class="list-group">
+          <a (click)="onDownloadFiles(filename)" class="list-group-item list-group-item-success"
+             style="cursor: pointer;">{{filename}}
+            <a class="alert-success float-right">Télécharger</a>
+          </a> <br>
+<!--          <div class="cartes" *ngFor="let filename of filenames">-->
+<!--            <div class="row1">-->
+<!--              <div class="card" style="width: 18rem; height: 18rem;" (click)="onDownloadFiles(filename)">-->
+<!--                <img class="card-img-top" src="../../../assets/93.png" alt="Card image cap">-->
+<!--                <div class="card-body">-->
+<!--                            <h5 class="card-title">{{filename}}</h5>-->
+<!--                  &lt;!&ndash;        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>&ndash;&gt;-->
+<!--                  <a href="#" class="btn btn-primary">Télécharger</a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
